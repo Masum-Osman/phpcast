@@ -2,8 +2,9 @@
 
 $config = require 'config.php';
 
-require 'database/connection.php';
-require 'database/QueryBuilder.php';
+require 'core/router.php';
+require 'core/database/connection.php';
+require 'core/database/QueryBuilder.php';
 
 //$pdo = Connection::make();        //first code type.
 return new QueryBuilder(
